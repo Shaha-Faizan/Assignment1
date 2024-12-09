@@ -1,0 +1,36 @@
+ 1. You are starting a new JavaScript project and need to set up version control.
+
+Task-1: Initialize a Git Repository
+
+1. Open your terminal.
+2. Navigate to your project directory.
+
+Run : git init
+
+Task-2: Create script.js
+
+1. Create a file named script.js.
+2. Add a simple JavaScript function : 
+
+ function helloWorld() {
+    console.log("Hello, World!");
+}
+
+
+Task-3: Add and Commit Changes
+
+1. Add the file to the staging area :  git add script.js
+
+2. Commit the changes : git commit -m "Initial commit with script.js"
+
+
+
+
+
+
+
+
+
+
+
+

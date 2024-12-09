@@ -1,0 +1,77 @@
+Part 2: Working with Branches
+
+
+Task-1: Create a New Branch
+
+1. Create a branch named feature-greeting : git branch feature-greeting
+
+2. Task-2: Switch to the New Branch : git checkout feature-greeting
+
+Task-3: Add a New Function in script.js
+
+Modify script.js to include:
+
+function personalizedGreeting(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+
+Task-4: Commit the Changes in the Feature Branch
+
+Add and commit the changes :  git add script.js
+git commit -m "Add personalized greeting function"
+
+
+Task-5: Merge feature-greeting into the Main Branch
+
+Switch to the main branch : git checkout main
+
+Merge the feature-greeting branch  :  git merge feature-greeting
+
+
+Task-6: Switch Back to the Main Branch
+
+Ensure you’re on the main branch :  git checkout main
+
+
+
+Git Commands and Usage:
+
+Understand and utilize essential Git commands.
+Commands include git init, git add, git commit, git push, git pull, etc.
+Recognize the purpose of .gitignore and configuration files.
+Branching and Merging:
+
+Learn to create branches using git branch.
+Switch between branches with git checkout or git switch.
+Merge branches and resolve potential conflicts.
+GitHub Workflow:
+
+Create repositories and understand their structure.
+Use pull requests for code reviews and collaboration.
+Handle repository cloning and remote tracking.
+Collaboration in GitHub:
+
+Assign roles and permissions for teams.
+Use GitHub Issues for project management.
+Collaborate effectively with forks and pull requests.
+Error Handling in Git:
+
+Revert changes using git reset or git revert.
+Handle merge conflicts with proper tools and commands.
+Recover lost commits with git reflog.
+Best Practices:
+
+Write clear and concise commit messages.
+Follow proper branching strategies like Gitflow or feature branching.
+Regularly pull updates from the main branch to stay updated.
+
+
+
+
+
+
+
+
+
+
