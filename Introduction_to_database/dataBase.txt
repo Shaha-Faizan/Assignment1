@@ -1,0 +1,183 @@
+Q1. What is a database? Explain with an example on why should we need a database.
+
+answer : A database is a systematically organized and structured collection of data that is designed to be easily 
+accessed, managed, and updated. It serves as a central repository for storing and organizing information in a 
+way that allows for efficient retrieval, modification, and management of data.
+
+Databases play a crucial role in various applications, providing a structured and systematic approach to handling large 
+volumes of information. They are commonly used in business, science, education, and numerous other fields to store, 
+organize, and retrieve data in a structured and efficient manner.
+
+
+Q2. Write a short note on file based storage system. Explain the major challenges of a file based storage
+system
+
+Answer : a filebase storage is a method to organizing and  store the data individual files on computer or 
+storage device . In this system, data is typically stored in a hierarchical structure, where directories (folders) 
+contain files and files may, in turn, contain data or information. Each file is a discrete unit that holds specific 
+information, and the organization is often based on the user or application's needs.
+
+thre are many challnges in file base storage system  
+1. redendency
+. write anamoly
+. update anamoly 
+. search anamoly 
+. delete anamoly
+
+2. security
+3. scaliblity limitations
+4 limited data analysis
+5. version control issue 
+
+
+Q3  What is DBMS? What was the need for DBMS
+
+Answer : DBMS stands for Database management system  ,  is a software used to manage data from a database.
+
+needs of DBMS : 
+1. Data organization :
+DBMS helps organize data in a structured way, making it easier to retrieve and analyze. 
+
+2. Data security :
+DBMS helps enforce data security and privacy policies, reducing the risk of data breaches. 
+
+3. Data integrity :
+DBMS helps ensure data is accurate, consistent, and complete. 
+
+4. Data sharing :
+DBMS helps make data resources available to multiple users, applications, or organizations.
+
+5. Data backup :
+DBMS helps create copies of data that can be used to recover if the original data is lost or corrupted. 
+
+
+Q4  Explain 5 challenges of file-based storage system which was tackled by DBMS
+
+Answer : 
+1. Scalability limitations: Managing large volumes of files can become cumbersome and inefficient as the 
+number of files and folders grows. Searching and retrieving specific data can also become slow
+
+2.  Data integrity concerns: Files are vulnerable to corruption, deletion, and accidental loss due to user actions, 
+hardware failures, or software errors. Lack of backup and recovery features can further exacerbate data loss
+
+3.  Limited data analysis: File systems don't inherently link data between files, making complex analysis and 
+extracting insights from large datasets challenging
+
+4. Security vulnerabilities: Sharing files can expose sensitive information to unauthorized access if proper 
+security measures are not implemented
+
+5.  Version control issues: Managing multiple versions of the same file can be difficult and prone to errors 
+without dedicated version control tools
+
+
+
+
+Q5  List Out the different types of classification in DBMS and explain
+
+Answer : 
+
+thre are two types of Databases Relational and Non Relational Databases
+
+Relational database : 
+1.  Tabular Structure: Data is organized into tables with rows and columns
+2.  Structured Query Language (SQL): Utilizes SQL for defining, querying, and manipulating data
+3. ACID Properties: Emphasizes ACID properties (Atomicity, Consistency, Isolation, Durability) to ensure data 
+integrity and transactional reliability
+4. Schema: Requires a predefined schema that defines the structure of the data, including tables, fields, and 
+relationships
+5.  Normalization: Often employs normalization techniques to reduce redundancy and dependency in data.
+
+example : 
+1. MySQ
+2. PostgreSQ
+3. Oracle Databas
+4. Microsoft SQL Server
+
+
+Use case : 
+1. Applications with well-defined and structured data requirements
+2. Situations where data relationships and integrity are critical
+3. Business applications, financial systems, and large-scale enterprise applications
+
+
+
+Non-Relational Database Management Systems : 
+1. W Diverse Data Models: Supports various data models, including document-oriented, key-value pairs, column family,
+ and graph databases
+2.  Schema Flexibility: Allows for schema-less or dynamic schema structures, providing flexibility to handle 
+evolving data requirementsL
+3. CAP Theorem: May prioritize aspects of the CAP theorem (Consistency, Availability, Partition Tolerance) 
+differently based on the specific type of NoSQL databaseL
+4. W Horizontal Scalability: Generally designed to scale horizontally, distributing data across multiple servers or 
+nodesL
+5.  Performance Optimization: Emphasizes performance and scalability over strict consistency in certain 
+scenarios.
+
+
+example : 
+1.  MongoDB (Document-oriented)
+2. Cassandra (Column-family)
+3.Redis (Key-value)
+4. Neo4j (Graph)
+
+Use case : 
+1. Applications with evolving and dynamic data structures
+2. Situations where horizontal scalability is crucial
+3. Rapid development environments and projects with varying data requirements
+4. Real-time applications, content management systems, and analytics
+
+
+
+Q6 What is the significance of Data Modelling and explain the types of Data Modelling
+
+Answer : 
+creating a blueprint for how data will be organized and stored in a database, enabling
+efficient data access, analysis, and management while minimizing redundancy and ensuring 
+data integrity across applications within an organization
+
+
+types of Data Modelling:
+
+Conceptual Data Model:
+This high-level view focuses on the overall business perspective, identifying key entities, attributes,
+and relationships without technical details, primarily used for communication between stakeholders and analysts. 
+
+Logical Data Model:
+A more detailed representation of the conceptual model, translating business concepts into specific data structures
+and relationships, often using Entity-Relationship Diagrams (ERDs) to define entities, attributes, and cardinalities
+
+Physical Data Model:
+The implementation-specific model that translates the logical design into a chosen database technology, 
+defining table structures, data types, and constraints based on the chosen database management system. 
+
+
+Q7 Explain 3 schema architecture along with its advantages ?
+
+Answer : 
+The 3-Tier architecture, intermediate servers handle the client request, which coordinates
+ the execution of the client request with subordinate servers. It adds middle ware(middle tier), 
+ which provides a way for clients of one DBMS to access data from another DBMS. 
+
+Generally, a two-tier client server model is used to access the data from one DBMS server,
+which is a centralized system. Another method of distribution is to store several equivalent
+databases in different places, which is termed as a Distributed Database system(DDS).
+
+Advantages : 
+
+1. The key three-tier benefit is improved scalability, since the application servers
+ can be deployed on many machines. Also, the database does not make longer connections with 
+ every client – it only requires connections from a smaller number of application servers.
+
+2. It improves data integrity. Here, all the updated information goes through the second tier.
+The second tier can ensure that only important information is allowed to be updated in the
+database and the risk of unreliable client applications corrupting information is removed.
+
+3. Security is improved since the client does not have direct access to the database.
+ it is more difficult for a client to obtain unauthorized data. Business logic is 
+ more secure because it is stored on a secure central server.
+
+4. Balancing of load is much easier with division of core business from the server of the database.
+
+5.High performance, lightweight, persistent object.
+
+  
